@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    word-wrap: break-word;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #736B92;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50%;
+    box-shadow:0px 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background: #7C90DB;
+    outline: 1px solid oklch(100% 0.00011 271.152)
+}
+
+.imagem-login {
+    display: none;
+    width: 40%;
+    height: 100%;
+    background: black url('../imgs/login_image2.jpg') top center no-repeat fixed;
+    background-size: 50%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.login-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-title {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.login-title h1 {
+    font-size: 3em;
+}
+
+.login-title p {
+    font-size: 0.9rem;
+}
+
+.inputs-group {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs-group input {
+    border-style: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 300;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.input-box::before {
+    content: url();
+}
+
+.input-box > .input-span > input:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.input-span {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.buttons-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttons-form > .button {
+    background-color: #E5BEED;
+    color: white;
+    font-weight: bolder;
+    transition: transform 0.3s ease;
+}
+
+.buttons-form > .button:hover {
+    transform: scale(1.05);
+    outline: 1px solid #736B92;
+}
