@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
 
     main {
         background: linear-gradient(135deg, #E5BEED, #9593D9, #7C90DB, #736B92, #7D5C65);
@@ -31,5 +31,43 @@
 
     .imagem-login {
         background-size: 50%;
+    }
+}
+
+@media screen and (max-height: 580px) {
+    .login {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-height: 430px) {
+    .login {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-height: 376px) {
+    .login {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-height: 340px) {
+    main {
+        height: 110vh;
+    }
+
+    .login {
+        height: 105vh;
+    }
+}
+
+@media screen and (max-width: 322px) {
+    main {
+        height: 120vh;
+    }
+
+    .login {
+        height: 115vh;
     }
 }
